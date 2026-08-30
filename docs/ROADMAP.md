@@ -14,17 +14,19 @@ Establish the real `ai-fanvue` Git repository as source of truth; create durable
 
 ## Phase 1 — Canonical Mila
 
-Status: NEXT
+Status: COMPLETE (media QC remains before approval/publishing)
 
 Generate 6–8 Mila v1 candidates, select/refine one canonical identity, generate a structured reference pack, configure a reusable Higgsfield consistency mechanism where supported, record generations/assets, and finalize the character bible. Exit when one definitive, repeatable Mila identity and references are stored/recorded.
 
 ## Phase 2 — Control Center v0.2
 
-Status: NEXT / MAY RUN IN PARALLEL WITH PHASE 1
+Status: IN PROGRESS
 
 Replace the static prototype with a real application in this repository. It needs Overview, Today's Queue, Content Library, Character Bible, Analytics, and Settings; clickable asset cards/full previews/metadata; approval, rejection, regeneration, caption editing, scheduling, search and filters; loading/error/empty states; persistence-ready modeling; provider adapters; environment-variable configuration; and clear demo/live data separation. Exit when it runs locally, key workflows function, and it can accept real Higgsfield assets.
 
 ## Phase 3 — Higgsfield Integration
+
+Status: IN PROGRESS — manifest-backed real-media import complete; live API sync deferred.
 
 Connect the provider layer, import generation IDs/results, show real media, support generation/regeneration where practical, track provider/model/cost/metadata, and use canonical references. Exit when generated media reaches the Control Center without manual placeholder replacement.
 

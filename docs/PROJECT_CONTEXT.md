@@ -55,7 +55,9 @@ Pillars: gaming/PC technology, fitness/wellness, lifestyle, fashion/night out, t
 
 Mila's brand direction is established, but her final canonical visual identity is not. A prior Higgsfield connector attempt produced generations Elliot could not find in ChatGPT or the visible Higgsfield profile; treat those generations as unavailable.
 
-Restart Mila v1 cleanly:
+Mila Vale v1 is now canonically locked through Higgsfield reusable element `f53ef8d1-8409-4d29-9024-0f22bd87afcb`. The canonical anchor, 11 reference generations, and six initial launch assets are recorded in `character/mila-vale.json` and can be imported into the Control Center as real remote media. Per-job prompt, exact model variant, and cost remain unknown where Higgsfield did not return them.
+
+The original intended workflow was:
 
 1. Generate 6–8 candidate portraits.
 2. Select the top candidates and refine the winner.

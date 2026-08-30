@@ -6,6 +6,47 @@ Each substantial session should record objective, completed work, changed files/
 
 ---
 
+## 2026-08-30 — Real Higgsfield Media Ingestion
+
+### Objective
+
+Replace Control Center concept/gradient previews with the real Mila Vale v1 Higgsfield media and make local importing practical without claiming a live provider connection.
+
+### Completed
+
+- Extended the provider-neutral asset model with real generation, reusable-element, asset-type, raw/thumbnail media, approval/publishing, Fanvue placeholder, and analytics-placeholder fields.
+- Implemented a manifest-backed Higgsfield normalization and duplicate-safe sync service using `character/mila-vale.json` as the durable structured source.
+- Imported all 18 known records on a new browser-local store: canonical anchor, 11 canonical/reference assets, and six launch/content assets.
+- Replaced gradient previews with real remote images, including full-media detail previews and a graceful broken-image state.
+- Added asset-type filtering, real provider/model display with unknown values preserved, Character Bible canonical-versus-launch sections, element ID/status, bulk sync, and duplicate-safe one-generation import.
+- Preserved approval-first actions. Regeneration is stored as a local request and does not call Higgsfield; scheduling remains local and Fanvue publishing remains disabled.
+
+### Validation / Limitations
+
+- `npm install` completed with 0 reported vulnerabilities and `npm run build` passed after the change.
+- Local browser QA confirmed the rendered launch thumbnails resolved from their Higgsfield CloudFront URLs; the full-media detail path uses the same real raw-media source.
+- Browser local storage (`mila-vale-assets-v2`) persists refreshes in the same browser profile only; server persistence, live Higgsfield authentication/API sync, per-job prompt/model/cost retrieval, production media storage, and all Fanvue operations remain follow-on work.
+
+### Next Recommended Action
+
+Perform full-resolution QC on the imported reference and launch images, then introduce server-side persistence before adding verified live Higgsfield API synchronization.
+
+## 2026-08-30 — Mila Vale v1 Canonical Identity
+
+### Completed
+
+- Generated and visually reviewed eight original portrait candidates; selected canonical neutral refinement `1b27687f-b6c2-4272-8fb2-b2faa9c86b9b`.
+- Created completed Higgsfield reusable character element `Mila Vale v1` (`f53ef8d1-8409-4d29-9024-0f22bd87afcb`).
+- Generated the 11-item reference pack and six initial non-explicit launch assets (gaming, lifestyle, fitness, fashion, travel, and glamorous swimwear).
+- Recorded the canonical identity, provider IDs, usable reference URLs, consistency rules, cost availability, and failed/replaced neutral reference in `character/mila-vale.json`.
+
+### Validation / Next Action
+
+- Visually inspected all candidate and refinement portraits; reference and launch files require full-resolution QC before approval or publishing.
+- Higgsfield did not return per-job costs; observed credit balance changed from 270 to 222.5.
+
+---
+
 ## 2026-08-30 — Control Center v0.2 Application Foundation
 
 ### Objective
